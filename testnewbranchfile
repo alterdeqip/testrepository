@@ -1,0 +1,126 @@
+/*
+ * Создан 4 октября 2004
+ *
+ * TODO Для изменения шаблона этого сгенерированного файла выберите пункт меню
+ * Окно - Параметры - Java - Стиль кода - Шаблоны кода
+ */
+package sample.ims;
+import sample.ims.data.*;
+import com.ibm.connector2.ims.ico.IMSDFSMessageException;
+
+/**
+ * @author ivyho
+ *
+ * TODO Для изменения шаблона этого сгенерированного типа выберите пункт меню
+ * Окно - Параметры - Java - Стиль кода - Шаблоны кода
+ */
+public class TestInOutProxy
+{
+	public static void main (String[] args)
+	{
+		try {
+			// ---------------------------------------------------	
+			//Создание formatHandler, создающего объект
+			//входящего сообщения из formatHandler. 
+			// ---------------------------------------------------	
+			INOUTMSG input = new INOUTMSG();
+
+			int sz = input.getSize();
+			System.out.println("\исходный размер входящего сообщения: " + sz);
+
+			// ---------------------------------------------------		
+			// Пока не устанавливайте длину (LL) поля...  Подождите, 
+			// пока входящие сообщения будут скорректированы с учетом только
+			// фактического количества отправленных элементов массива. 
+			// ---------------------------------------------------	
+			input.setWs__zz((short) 0);
+			input.setWs__trcd("SKS7 ");
+
+			// ---------------------------------------------------
+			// Создание массива и отправка заполняющих его элементов
+			// в  прикладную программу приложения IMS.  В данном
+			// случае отправляются три элемента.  
+			// ---------------------------------------------------	
+			Inoutmsg_ws__customer[] customers = new Inoutmsg_ws__customer[3];
+
+			Inoutmsg_ws__customer aCustomer1 = new Inoutmsg_ws__customer();
+			aCustomer1.setWs__cust__name("Cathy Tang");
+			aCustomer1.setWs__cust__number("CN001");
+			customers[0] = aCustomer1;
+
+			Inoutmsg_ws__customer aCustomer2 = new Inoutmsg_ws__customer();
+			aCustomer2.setWs__cust__name("Haley Fung");
+			aCustomer2.setWs__cust__number("CN002");
+			customers[1] = aCustomer2;
+
+			Inoutmsg_ws__customer aCustomer3 = new Inoutmsg_ws__customer();
+			aCustomer3.setWs__cust__name("Steve Kuo");
+			aCustomer3.setWs__cust__number("CN003");
+			customers[2] = aCustomer3;
+
+			// ---------------------------------------------------
+			// Настройка массива на входящее сообщение.
+			// ---------------------------------------------------
+			input.setWs__customer(customers);
+			input.setIndx((short) 3);
+			
+			System.out.println("\nInitial value of INDX is: " + input.getIndx());			
+
+			// ---------------------------------------------------			
+			// Перераспределение буфера по фактическим размерам 
+			// ---------------------------------------------------			
+			byte[] bytes = input.getBytes();
+			int size = input.getSize();
+			byte[] newBytes = new byte[size];
+			System.arraycopy(bytes, 0, newBytes, 0, size);
+
+			// ---------------------------------------------------			
+			// Теперь, когда известен, реальный размер, новая настройка
+			// байтов в обработчике формата и настройка 
+			// длины поля ввода сообщения.
+			// ---------------------------------------------------			
+			input.setBytes(newBytes);
+			input.setWs__ll((short) size);
+			System.out.println("\nAdjusted size of input message is: " + size);
+			System.out.println("\nAdjusted size of INDX is: " + input.getIndx());				
+
+			// ---------------------------------------------------
+			// Настройка полей, которые следуют за массивом, 
+			// скорректирована после входящего сообщения.  
+			// ---------------------------------------------------			 			
+			input.setWs__func__code("123456");
+
+			InOutImpl proxy = new InOutImpl();
+
+			INOUTMSG output = new sample.ims.data.INOUTMSG();
+			output = proxy.runInOut(input);
+
+			short outndx = output.getIndx();
+			System.out.println("\nOutput value of INDX is: " + outndx);
+
+			Inoutmsg_ws__customer outArray[] = output.getWs__customer();
+
+			for (int i = 0; i < outndx; i++)
+			{
+				System.out.println(
+					"\n"
+						+ outArray[i].getWs__cust__name()
+						+ outArray[i].getWs__cust__number());
+			}
+		}
+		catch (Exception e)
+		{
+			if (e instanceof IMSDFSMessageException)
+			{
+				System.out.println(
+					"\nIMS returned message: "
+						+ ((IMSDFSMessageException) e).getDFSMessage());
+			}
+			else
+			{
+				System.out.println(
+					"\nIMS Connector exception is: " + e);
+			}
+		}
+	}
+}
