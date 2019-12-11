@@ -16,7 +16,7 @@ import com.ibm.connector2.ims.ico.IMSDFSMessageException;
  */
 public class TestInOutProxy
 {
-	public static void main (String[] args)
+	public static void main (String[] args)werwerwerwer
 	{
 		try {
 			// ---------------------------------------------------	
