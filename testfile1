@@ -1,6 +1,7 @@
 /*
  * Создан 4 октября 2004
- *werwerwerwerwerwerwerwerwereго сгенерированного файла выберите пункт меню
+ *
+ * TODO Для изменения шаблона этого сгенерированного файла выберите пункт меню
  * Окно - Параметры - Java - Стиль кода - Шаблоны кода
  */
 package sample.ims;
@@ -10,16 +11,16 @@ sdfsdfsdfsdf
 /**ываываываывааыва
  * @author ivyhoertwertertewrtertewrtert CHANGES
  *
- * TODO Для изменения шаблона этого сгенерированного типа выберите пункт менюsdfsdfsdfsdf
+ * TODO Для изменения шаблона этого сгенерированного типа выберите пункт меню
  * Окно - Параметры - Java - Стиль кода - Шаблоны кода
  */
 public class TestInOutProxy
 {
-	public static void main (String[] args)werwerwerwsdfgsdfgsdfgsdfgsdfgsdfgsdfger
+	public static void main (String[] args)werwerwerwer
 	{
 		try {
 			// ---------------------------------------------------	
-			//Создание formatHandler, создающего орпаопорапроапроапробъект
+			//Создание formatHandler, создающего объект
 			//входящего сообщения из formatHandler. 
 			// ---------------------------------------------------	
 			INOUTMSG input = new INOUTMSG();
