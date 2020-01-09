@@ -5,7 +5,7 @@
  * Окно - Параметры - Java - Стиль кода - Шаблоны кода
  */
 package sample.ims;
-import sample.ims.data.*;
+import sample.ims.data.*;ячсмячсмячсмячсм
 import com.ibm.connector2.ims.ico.IMSDFSMessageException;
 
 /**
