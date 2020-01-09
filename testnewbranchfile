@@ -5,12 +5,14 @@
  * Окно - Параметры - Java - Стиль кода - Шаблоны кода
  */
 package sample.ims;
-import sample.ims.data.*;
+import sample.ims.data.*;werwerwerwerwerwer
 import com.ibm.connector2.ims.ico.IMSDFSMessageException;
 
 /**
+
  * @author ivyho
  *впрвпрапрапр
+
  * TODO Для изменения шаблона этого сгенерированного типа выберите пункт меню
  * Окно - Параметры - Java - Стиль кода - Шаблоны кода
  */
