@@ -1,3 +1,0 @@
-P4CLIENT=blablaclient
-P4USER=testervolr
-P4PORT=localhost:1666
