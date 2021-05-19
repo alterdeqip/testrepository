@@ -1,8 +1,8 @@
 ячсмячсмячсмячMay 10, 2019 5:41:34 AM org.apache.catalina.startup.SetAllPropertiesRule begin
 WARNING: [SetAllPropertiesRule]{Server/Service/Connector} Setting property 'maxSpareThreads' to '75' did not find a matching property.sdfsdfgsdfgsdf
 sfgsdfgsdfgsdfgsdfgsdfgsdfg
-May 10, 2019 5:41:34 AM org.apache.tomcat.util.net.SSLHostCапывапывпonfig setProtocols
-WARNING: The protocol [TLSv1.1] was added to the list of protocols on the SSLHostConfig named [_default_]. Check if a +/- prefix is missing.
+May 10, 2019 5:41:34 AM org.apache.tomcat.util.net.SSLHostConfig setProtocols
+WARNING: The protocol [TLSv1.xcvbxcbvxcbv1] was added to the list of protocols on the SSLHostConfig named [_default_]. Check if a +/- prefix is missing.
 May 10, 2019 5:41:34 AM org.apache.tomcat.util.net.SSLHostConfig setProtocols
 WARNING: The protocol [TLSv1] was added to the list of protocols on the SSLHostConfig named [_default_]. Check if a +/- prefix is missing.
 CHANGED LINE 9
@@ -10,18 +10,18 @@ INFO: Server version:        Apache Tomcat/8.5.24sadfasdfasdf
 asdfasdfasdf
 May 10, 2019 5:41:34 AM org.apache.catalina.startup.VersionLoggerListener logdsfgsdfg
 sdfgsdfgsdfg
-INFO: Server built:          Nov 27 2017 13:05:30 UTыфвафыфывC
+INFO: Server built:          Nov 27 2017 13:05:30 UTC
 ячсмячсм
-ячсмячсмячсмfghjfghjfghjfgjцукецукецуке
+ячсмячсмячсм
 May 10, 2019 5:41:34 AM org.apache.catalina.startup.VersionLoggerListener log
-ячсмячсмячсмsdfgsdfgsdfgцукецукецукефывафыаыф
-ячсмячсмzxcvzxcvzxcvывапывапывап
+ячсмячсмячсм
+ячсмячсмzxcvzxcvzxcv
 zxcvzxcvzxcv
-zxcvzxcvzx
+zxcvzxcvzxjhkghjkghjkghj
 asdfasdfasdfasdf
 System property [org.owasp.esapi.devteam] is not set
 May 10, 2019 5:41:54 AM org.apache.jasper.servlet.TldScanner scanJars
-INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO: At least one JAR waxcvbxcbxcvbxs scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 May 10, 2019 5:42:00 AM org.apache.tomcat.util.descriptor.web.SecurityConstraячсячсячсячсячс
 ячсячсячсячсint findUncoveredHttpMethods asdfasdfasdfasd
 SEVERE: For security constraints with URL pattern [/*] only the HTTP methods [TRACE HEAD DELETE OPTIONS PUT] are covered. All other methods are uncovered.
@@ -30,7 +30,7 @@ SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 May 10, 2019 5:42:01 AM org.apache.catalina.startup.HostConfig deployDescriptor
 INFO: Deployment of configuration descriptor [C:\Program Files\Collaborator Server\tomcat\conf\Catalina\localhost\ROOT.xml] has finished in [26,704] ms
-May 10, 2019 5:42:01 AM org.apache.catalinasdfgsdgfsdg.startup.HostConfig deployDescriptor
+May 10, 2019 5:42:01 AM org.apache.catalina.startup.HostConfig deployDescriptor
 INFO: Deploying configuration descriptor [C:\Program Files\Collaborator Server\tomcat\conf\Catalina\localhost\RtcService.xml]
 May 10, 2019 5:42:01 AM org.apache.catalina.core.StandardContext setPath
 WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [\RtcService] does not meet these criteria and has been changed to [/\RtcService]
