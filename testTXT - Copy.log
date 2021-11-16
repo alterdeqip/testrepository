@@ -20,7 +20,7 @@ SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 May 10, 2019 5:42:01 AM org.apache.catalina.startup.HostConfig deployDescriptor
 INFO: Deployment of configuration descriptor [C:\Program Files\Collaborator Server\tomcat\conf\Catalina\localhost\ROOT.xml] has finished in [26,704] ms
-May 10, 2019 5:42:01 AM org.apache.catalina.startup.HostConfig deployDescriptor
+May 10, 2019 5:42:01 AM org.apache.catqwerqwerqwerqwerqweralina.startup.HostConfig deployDescriptor
 INFO: Deploying configuration descriptor [C:\Program Files\Collaborator Server\tomcat\conf\Catalina\localhost\RtcService.xml]
 May 10, 2019 5:42:01 AM org.apache.catalina.core.StandardContext setPath
 WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [\RtcService] does not meet these criteria and has been changed to [/\RtcService]
