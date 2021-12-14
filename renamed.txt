@@ -13,7 +13,7 @@ sdfgsdfgsdfg
 INFO: Server built:          Nov 27 2017 13:05:30 UTCsdfgsdfgsdfg
 ячсмячсм FIRST CHANGES
 ячсмячсмячсм SECOND CHANGES
-May 10, 2019 5:41:34 AM org.apache.catalina.startup.VersionLoggerListener log
+May 10, 2019 5:41:34 THIRD CHANGES
 ячсмячсмячсм
 ячсмячсмzxcvzxcvzxcv
 zxcvzxcvzxcv
