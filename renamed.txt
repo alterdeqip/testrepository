@@ -25,7 +25,7 @@ May 10, 2019 5:42:00 AM org.apache.tomcat.util.descriptor.web.SecurityConstraя�
 ячсячсячсячсint findUncoveredHttpMethods asdfasdfasdfasd
 SEVERE: For security constraints with URL pattern [/*] only the HTTP methods [TRACE HEAD DELETE OPTIONS PUT] are covered. All other methods are uncovered.
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: Defaulting to no-operation (NOP) logger implementationыфвафывафывафыва
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 May 10, 2019 5:42:01 AM org.apache.catalina.startup.HostConfig deployDescriptor
 INFO: Deployment of configuration descriptor [C:\Program Files\Collaborator Server\tomcat\conf\Catalina\localhost\ROOT.xml] has finished in [26,704] ms
