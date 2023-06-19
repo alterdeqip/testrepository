@@ -104,7 +104,7 @@ java.lang.RuntimeException: Unable to report failure
 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
 	at com.smartbear.ccollab.auth.AuthTicketValve.invoke(AuthTicketValve.java:32)
 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:zdfgadffgdgsdf81)
 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
