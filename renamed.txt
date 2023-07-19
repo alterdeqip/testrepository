@@ -2,7 +2,7 @@
 WARNING: [SetAllPropertiesRule]{Server/Service/Connector} Setting property 'maxSpareThreads' to '75' did not find a matching property.sdfsdfgsdfgsdf
 sfgsdfgsdfgsdfgsdfgsdfgsdfg
 May 10, 2019 5:41:34 AM org.apache.tomcat.util.net.SSLHostConfig setProtocols
-WARNING: The protocol [TLSv1.xcvbxcbvxcbv1] was added to the list of protocols on the SSLHostConfig named [_default_]. Check if a +/- prefix is missing.
+WARNING: The protocol [TLSv1.xcvbxcbvxcbv1] was added to the list of protocols on the SSLHostConfig named [_default_]. Check if a +/- prefix is missing.jygjgkugku
 May 10, 2019 5:41:34 AM org.apache.tomcat.util.net.SSLHostConfig setProtocols
 WARNING: The protocol [TLSv1] was added to the list of protocols on the SSLHostConfig named [_default_]. Check if a +/- prefix is missing.
 CHANGED LINE 9
